@@ -3,6 +3,10 @@
 As the last name of Patty and Selma, Marge Simpson's older sisters who work at the RMV,
 this little gem parses Massachusetts RMV wait times at various branches across the state.
 
+== Installation
+
+    gem install bouvier
+
 == Usage
 
     # Get all branches
