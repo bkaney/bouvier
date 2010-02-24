@@ -1,6 +1,21 @@
 = bouvier
 
-Description goes here.
+As the last name of Patty and Selma, Marge Simpson's older sisters who work at the RMV,
+this little gem parses Massachusetts RMV wait times at various branches across the state.
+
+== Usage
+
+    # Get all branches
+    branches = Bouvier::Client.branches
+
+    # Get a branch by town name
+    branch = Bouvier::Client.branch("Watertown")
+
+    # License wait time
+    branch.licensing
+
+    # Registeration wait time
+    branch.registeration
 
 == Note on Patches/Pull Requests
  
