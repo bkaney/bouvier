@@ -4,14 +4,14 @@ require 'hashie'
 module Bouvier
 
   class Client
- 
+
     include HTTParty
     format :xml
-    base_uri "http://www.eot.state.ma.us"
+    base_uri "http://www.massdot.state.ma.us"
 
     # Bouvier::Client.branches
     def self.branches
-      response = get('/developers/downloads/qmaticXML.aspx')
+      response = get('/feeds/qmaticxml/qmaticXML.aspx')
       Hashie::Mash.new(response['branches']).branch
     end
 
